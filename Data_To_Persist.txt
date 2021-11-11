@@ -1,0 +1,26 @@
+DATA TO PERSIST
+
+USER:
+id = int (Autoincremento)
+username = varchar
+password = varchar
+name = varchar
+email = varchar
+
+CREDIT_CARD:
+
+id = int (Autoincremento)
+card_name = varchar
+card_number = int
+card_franchise = varchar
+bank_name = varchar
+FK_id_user= int FK
+
+TRANSACTION
+
+id = int (Autoincremento)
+transaction_date = Date
+transaction_value = float
+store_name = varchar
+FK_id_credit_card= int FK
+
